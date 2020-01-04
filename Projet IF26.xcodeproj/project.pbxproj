@@ -11,6 +11,7 @@
 		A33BDED223C0C36E006870EE /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED123C0C36E006870EE /* SignUpController.swift */; };
 		A33BDED423C127BA006870EE /* AddLogementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED323C127BA006870EE /* AddLogementController.swift */; };
 		A33BDED623C12ABA006870EE /* Logement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED523C12ABA006870EE /* Logement.swift */; };
+		A33BDED823C12CE1006870EE /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED723C12CE1006870EE /* Piece.swift */; };
 		A344352B23B905520046A445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352A23B905520046A445 /* AppDelegate.swift */; };
 		A344352D23B905520046A445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352C23B905520046A445 /* SceneDelegate.swift */; };
 		A344353223B905520046A445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A344353023B905520046A445 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		A33BDED123C0C36E006870EE /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		A33BDED323C127BA006870EE /* AddLogementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogementController.swift; sourceTree = "<group>"; };
 		A33BDED523C12ABA006870EE /* Logement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logement.swift; sourceTree = "<group>"; };
+		A33BDED723C12CE1006870EE /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		A344352723B905520046A445 /* Projet IF26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet IF26.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A344352A23B905520046A445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A344352C23B905520046A445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				A344353323B905520046A445 /* Projet_IF26.xcdatamodeld */,
+				A33BDED723C12CE1006870EE /* Piece.swift */,
 				A33BDED523C12ABA006870EE /* Logement.swift */,
 				A33BDECE23C0BD91006870EE /* User.swift */,
 			);
@@ -174,6 +177,7 @@
 				A33BDECF23C0BD91006870EE /* User.swift in Sources */,
 				A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */,
 				A33BDED623C12ABA006870EE /* Logement.swift in Sources */,
+				A33BDED823C12CE1006870EE /* Piece.swift in Sources */,
 				A344352D23B905520046A445 /* SceneDelegate.swift in Sources */,
 				A344354223B906E40046A445 /* LoginController.swift in Sources */,
 				A33BDED423C127BA006870EE /* AddLogementController.swift in Sources */,
