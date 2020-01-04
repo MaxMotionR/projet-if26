@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A33BDECF23C0BD91006870EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDECE23C0BD91006870EE /* User.swift */; };
 		A344352B23B905520046A445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352A23B905520046A445 /* AppDelegate.swift */; };
 		A344352D23B905520046A445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352C23B905520046A445 /* SceneDelegate.swift */; };
 		A344352F23B905520046A445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352E23B905520046A445 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A33BDECE23C0BD91006870EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A344352723B905520046A445 /* Projet IF26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet IF26.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A344352A23B905520046A445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A344352C23B905520046A445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				A344353323B905520046A445 /* Projet_IF26.xcdatamodeld */,
+				A33BDECE23C0BD91006870EE /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				A344352F23B905520046A445 /* ViewController.swift in Sources */,
 				A344352B23B905520046A445 /* AppDelegate.swift in Sources */,
+				A33BDECF23C0BD91006870EE /* User.swift in Sources */,
 				A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */,
 				A344352D23B905520046A445 /* SceneDelegate.swift in Sources */,
 				A344354223B906E40046A445 /* LoginController.swift in Sources */,
