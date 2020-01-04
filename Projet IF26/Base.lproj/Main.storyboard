@@ -252,6 +252,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enregister"/>
                                 <connections>
+                                    <action selector="saveAction:" destination="L0J-d6-UOY" eventType="touchUpInside" id="ges-DL-nbR"/>
                                     <action selector="singupAction:" destination="V0n-Bt-XYJ" eventType="touchUpInside" id="H9h-9k-vo9"/>
                                 </connections>
                             </button>
