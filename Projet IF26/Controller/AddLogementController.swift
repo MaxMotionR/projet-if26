@@ -52,5 +52,7 @@ class AddLogementController: UIViewController {
         
         
         try? AppDelegate.viewContext.save()
+        
+        //TODO go to make etat des lieux
     }
 }
