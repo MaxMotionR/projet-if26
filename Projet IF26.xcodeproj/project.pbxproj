@@ -14,6 +14,7 @@
 		A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A344353323B905520046A445 /* Projet_IF26.xcdatamodeld */; };
 		A344353723B905550046A445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A344353623B905550046A445 /* Assets.xcassets */; };
 		A344353A23B905550046A445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A344353823B905550046A445 /* LaunchScreen.storyboard */; };
+		A344354223B906E40046A445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344354123B906E40046A445 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A344353623B905550046A445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A344353923B905550046A445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A344353B23B905550046A445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A344354123B906E40046A445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A33BDECD23C09D28006870EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A344353323B905520046A445 /* Projet_IF26.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A344351E23B905520046A445 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +68,15 @@
 		A344352923B905520046A445 /* Projet IF26 */ = {
 			isa = PBXGroup;
 			children = (
+				A33BDECD23C09D28006870EE /* Model */,
 				A344352A23B905520046A445 /* AppDelegate.swift */,
 				A344352C23B905520046A445 /* SceneDelegate.swift */,
 				A344352E23B905520046A445 /* ViewController.swift */,
+				A344354123B906E40046A445 /* LoginController.swift */,
 				A344353023B905520046A445 /* Main.storyboard */,
 				A344353623B905550046A445 /* Assets.xcassets */,
 				A344353823B905550046A445 /* LaunchScreen.storyboard */,
 				A344353B23B905550046A445 /* Info.plist */,
-				A344353323B905520046A445 /* Projet_IF26.xcdatamodeld */,
 			);
 			path = "Projet IF26";
 			sourceTree = "<group>";
@@ -145,6 +156,7 @@
 				A344352B23B905520046A445 /* AppDelegate.swift in Sources */,
 				A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */,
 				A344352D23B905520046A445 /* SceneDelegate.swift in Sources */,
+				A344354223B906E40046A445 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
