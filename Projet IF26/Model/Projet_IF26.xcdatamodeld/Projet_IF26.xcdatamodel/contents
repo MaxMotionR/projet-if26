@@ -6,7 +6,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="out_state" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Logement" representedClassName="Logement" syncable="YES" codeGenerationType="class">
+    <entity name="Logement" representedClassName="Logement" syncable="YES" codeGenerationType="category">
         <attribute name="adress" optional="YES" attributeType="String"/>
         <attribute name="city" optional="YES" attributeType="String"/>
         <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
