@@ -13,6 +13,7 @@
 		A33BDED623C12ABA006870EE /* Logement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED523C12ABA006870EE /* Logement.swift */; };
 		A33BDED823C12CE1006870EE /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED723C12CE1006870EE /* Piece.swift */; };
 		A33BDEDA23C12E2F006870EE /* AddPieceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDED923C12E2F006870EE /* AddPieceController.swift */; };
+		A33BDEDC23C1E012006870EE /* AddDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BDEDB23C1E012006870EE /* AddDetailController.swift */; };
 		A344352B23B905520046A445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352A23B905520046A445 /* AppDelegate.swift */; };
 		A344352D23B905520046A445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344352C23B905520046A445 /* SceneDelegate.swift */; };
 		A344353223B905520046A445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A344353023B905520046A445 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		A33BDED523C12ABA006870EE /* Logement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logement.swift; sourceTree = "<group>"; };
 		A33BDED723C12CE1006870EE /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		A33BDED923C12E2F006870EE /* AddPieceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPieceController.swift; sourceTree = "<group>"; };
+		A33BDEDB23C1E012006870EE /* AddDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailController.swift; sourceTree = "<group>"; };
 		A344352723B905520046A445 /* Projet IF26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet IF26.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A344352A23B905520046A445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A344352C23B905520046A445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A33BDED123C0C36E006870EE /* SignUpController.swift */,
 				A33BDED323C127BA006870EE /* AddLogementController.swift */,
 				A33BDED923C12E2F006870EE /* AddPieceController.swift */,
+				A33BDEDB23C1E012006870EE /* AddDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A344352B23B905520046A445 /* AppDelegate.swift in Sources */,
+				A33BDEDC23C1E012006870EE /* AddDetailController.swift in Sources */,
 				A33BDED223C0C36E006870EE /* SignUpController.swift in Sources */,
 				A33BDECF23C0BD91006870EE /* User.swift in Sources */,
 				A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */,
