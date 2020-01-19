@@ -18,6 +18,7 @@ class PieceListViewController: UIViewController {
 
     }
     
+    var logement : Logement!
     var pieces = Piece.all
     var piece : Piece!
     @IBOutlet weak var tableView: UITableView!

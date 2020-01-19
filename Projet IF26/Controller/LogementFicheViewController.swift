@@ -34,8 +34,16 @@ class LogementFicheViewController: UIViewController {
             return "Location non commencée"
     }
     
-
+    @IBAction func create(_ sender: Any) {
+        performSegue(withIdentifier: "segueToPieceList", sender: nil)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToPieceList" {
+            let pieceListVC = segue.destination as! PieceListViewController
+            pieceListVC.logement = self.logement
+        }
+    }
     
 
     /*

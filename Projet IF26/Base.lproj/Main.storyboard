@@ -546,15 +546,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-T1-MRq">
-                                <rect key="frame" x="154" y="465" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Consulter"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHn-2Q-OQU">
                                 <rect key="frame" x="109" y="560" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Etat des lieux de sortie"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-T1-MRq">
+                                <rect key="frame" x="111" y="466" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Etat des lieux d'entrée"/>
+                                <connections>
+                                    <action selector="create:" destination="z4l-SC-IwT" eventType="touchUpInside" id="UAg-E0-QFF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -564,6 +567,7 @@
                         <outlet property="adressLabel" destination="vjA-Q2-xEH" id="ZQu-tO-Qbk"/>
                         <outlet property="locationStateLabel" destination="dEq-Cx-V6H" id="zmS-Lv-yYi"/>
                         <outlet property="nameLabel" destination="0Wa-Xc-LNJ" id="K40-1S-xDu"/>
+                        <segue destination="R4o-B1-HU8" kind="presentation" identifier="segueToPieceList" modalPresentationStyle="fullScreen" id="a9m-Pc-Dre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2h-aD-nlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
