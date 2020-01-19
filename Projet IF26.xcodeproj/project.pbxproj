@@ -25,6 +25,7 @@
 		A3855A9523D36D57006A4F66 /* PieceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9423D36D57006A4F66 /* PieceListViewController.swift */; };
 		A3855A9723D37316006A4F66 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9623D37316006A4F66 /* Detail.swift */; };
 		A3855A9923D37E38006A4F66 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9823D37E38006A4F66 /* DetailListViewController.swift */; };
+		A3855A9B23D4B915006A4F66 /* LogementFicheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9A23D4B915006A4F66 /* LogementFicheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A3855A9423D36D57006A4F66 /* PieceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceListViewController.swift; sourceTree = "<group>"; };
 		A3855A9623D37316006A4F66 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		A3855A9823D37E38006A4F66 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
+		A3855A9A23D4B915006A4F66 /* LogementFicheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogementFicheViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				A33BDED923C12E2F006870EE /* AddPieceController.swift */,
 				A33BDEDB23C1E012006870EE /* AddDetailController.swift */,
 				A3855A9823D37E38006A4F66 /* DetailListViewController.swift */,
+				A3855A9A23D4B915006A4F66 /* LogementFicheViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				A344354223B906E40046A445 /* LoginController.swift in Sources */,
 				A33BDED423C127BA006870EE /* AddLogementController.swift in Sources */,
 				A3855A9523D36D57006A4F66 /* PieceListViewController.swift in Sources */,
+				A3855A9B23D4B915006A4F66 /* LogementFicheViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
