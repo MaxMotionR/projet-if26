@@ -34,11 +34,9 @@ class AddPieceController: UIViewController {
         // Info from text input
         piece.name = name
         
-        //TODO : Save the Logement
-        
-        
         try? AppDelegate.viewContext.save()
         
-        //TODO go back
+        self.dismiss(animated: true, completion: nil)
+
     }
 }

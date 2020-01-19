@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Detail" representedClassName="Detail" syncable="YES" codeGenerationType="class">
+    <entity name="Detail" representedClassName=".Detail" syncable="YES" codeGenerationType="category">
         <attribute name="comment" optional="YES" attributeType="String"/>
         <attribute name="in_state" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="out_state" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Logement" representedClassName="Logement" syncable="YES" codeGenerationType="category">
+    <entity name="Logement" representedClassName=".Logement" syncable="YES" codeGenerationType="category">
         <attribute name="adress" optional="YES" attributeType="String"/>
         <attribute name="city" optional="YES" attributeType="String"/>
         <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -14,19 +14,21 @@
         <attribute name="is_done_out" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="locataire" optional="YES" attributeType="String"/>
         <attribute name="zip_code" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="logements" inverseEntity="User"/>
     </entity>
-    <entity name="Piece" representedClassName="Piece" syncable="YES" codeGenerationType="category">
+    <entity name="Piece" representedClassName=".Piece" syncable="YES" codeGenerationType="category">
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <entity name="User" representedClassName=".User" syncable="YES" codeGenerationType="category">
         <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="fullname" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="logements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Logement" inverseName="user" inverseEntity="Logement"/>
     </entity>
     <elements>
-        <element name="User" positionX="-263.140625" positionY="421.37109375" width="128" height="88"/>
-        <element name="Logement" positionX="-376.56640625" positionY="214.8125" width="128" height="148"/>
-        <element name="Piece" positionX="-45" positionY="90" width="128" height="58"/>
         <element name="Detail" positionX="20.88671875" positionY="280.7421875" width="128" height="103"/>
+        <element name="Logement" positionX="-376.56640625" positionY="214.8125" width="128" height="163"/>
+        <element name="Piece" positionX="-45" positionY="90" width="128" height="58"/>
+        <element name="User" positionX="-128.69140625" positionY="399.53125" width="131.54296875" height="103"/>
     </elements>
 </model>

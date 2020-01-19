@@ -21,6 +21,10 @@
 		A344353723B905550046A445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A344353623B905550046A445 /* Assets.xcassets */; };
 		A344353A23B905550046A445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A344353823B905550046A445 /* LaunchScreen.storyboard */; };
 		A344354223B906E40046A445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344354123B906E40046A445 /* LoginController.swift */; };
+		A3855A9323D34574006A4F66 /* LogementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9223D34574006A4F66 /* LogementListViewController.swift */; };
+		A3855A9523D36D57006A4F66 /* PieceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9423D36D57006A4F66 /* PieceListViewController.swift */; };
+		A3855A9723D37316006A4F66 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9623D37316006A4F66 /* Detail.swift */; };
+		A3855A9923D37E38006A4F66 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9823D37E38006A4F66 /* DetailListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		A344353923B905550046A445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A344353B23B905550046A445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A344354123B906E40046A445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A3855A9223D34574006A4F66 /* LogementListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogementListViewController.swift; sourceTree = "<group>"; };
+		A3855A9423D36D57006A4F66 /* PieceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceListViewController.swift; sourceTree = "<group>"; };
+		A3855A9623D37316006A4F66 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		A3855A9823D37E38006A4F66 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 				A33BDED723C12CE1006870EE /* Piece.swift */,
 				A33BDED523C12ABA006870EE /* Logement.swift */,
 				A33BDECE23C0BD91006870EE /* User.swift */,
+				A3855A9623D37316006A4F66 /* Detail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,10 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				A344354123B906E40046A445 /* LoginController.swift */,
+				A3855A9223D34574006A4F66 /* LogementListViewController.swift */,
+				A3855A9423D36D57006A4F66 /* PieceListViewController.swift */,
 				A33BDED123C0C36E006870EE /* SignUpController.swift */,
 				A33BDED323C127BA006870EE /* AddLogementController.swift */,
 				A33BDED923C12E2F006870EE /* AddPieceController.swift */,
 				A33BDEDB23C1E012006870EE /* AddDetailController.swift */,
+				A3855A9823D37E38006A4F66 /* DetailListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,16 +191,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A344352B23B905520046A445 /* AppDelegate.swift in Sources */,
+				A3855A9923D37E38006A4F66 /* DetailListViewController.swift in Sources */,
 				A33BDEDC23C1E012006870EE /* AddDetailController.swift in Sources */,
+				A3855A9323D34574006A4F66 /* LogementListViewController.swift in Sources */,
 				A33BDED223C0C36E006870EE /* SignUpController.swift in Sources */,
 				A33BDECF23C0BD91006870EE /* User.swift in Sources */,
 				A344353523B905520046A445 /* Projet_IF26.xcdatamodeld in Sources */,
 				A33BDEDA23C12E2F006870EE /* AddPieceController.swift in Sources */,
 				A33BDED623C12ABA006870EE /* Logement.swift in Sources */,
+				A3855A9723D37316006A4F66 /* Detail.swift in Sources */,
 				A33BDED823C12CE1006870EE /* Piece.swift in Sources */,
 				A344352D23B905520046A445 /* SceneDelegate.swift in Sources */,
 				A344354223B906E40046A445 /* LoginController.swift in Sources */,
 				A33BDED423C127BA006870EE /* AddLogementController.swift in Sources */,
+				A3855A9523D36D57006A4F66 /* PieceListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
