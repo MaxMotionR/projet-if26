@@ -15,7 +15,8 @@ class DetailListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    var piece : Piece!
+
     var details = Detail.all
     
 

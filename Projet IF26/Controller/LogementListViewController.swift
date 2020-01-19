@@ -14,12 +14,20 @@ class LogementListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print (self.user)
+        //print (self.user)
     }
     var user: User!
+    var logement : Logement!
     var logements = Logement.all
     
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToLogementFiche" {
+            let logementFicheVC = segue.destination as! LogementFicheViewController
+            logementFicheVC.logement = self.logement
+        }
+    }
     
 
     /*
@@ -34,7 +42,7 @@ class LogementListViewController: UIViewController {
 
 }
 
-extension LogementListViewController: UITableViewDataSource {
+extension LogementListViewController: UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -51,5 +59,11 @@ extension LogementListViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = "\(String(describing: logement.adress))"
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            
+            self.logement = logements[indexPath.row]
+            performSegue(withIdentifier: "segueToLogementFiche", sender: nil)
     }
 }

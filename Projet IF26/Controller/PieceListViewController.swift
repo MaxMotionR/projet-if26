@@ -14,9 +14,18 @@ class PieceListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.dataSource = self
+
     }
     
     var pieces = Piece.all
+    var piece : Piece!
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
     /*
     // MARK: - Navigation
@@ -30,7 +39,7 @@ class PieceListViewController: UIViewController {
 
 }
 
-extension PieceListViewController: UITableViewDataSource {
+extension PieceListViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -46,5 +55,11 @@ extension PieceListViewController: UITableViewDataSource {
         cell.textLabel?.text = piece.name
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("section: \(indexPath.section)")
+            print("row: \(indexPath.row)")
+            print(pieces[indexPath.row])
     }
 }

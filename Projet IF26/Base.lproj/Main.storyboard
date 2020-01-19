@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R4o-B1-HU8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -136,7 +136,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ujD-HA-vd4"/>
                     <connections>
-                        <segue destination="z4l-SC-IwT" kind="presentation" id="NNm-S4-AYa"/>
+                        <segue destination="z4l-SC-IwT" kind="presentation" identifier="segueToLogementFiche" id="NNm-S4-AYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXG-hJ-hrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -619,6 +619,10 @@
                         <viewLayoutGuide key="safeArea" id="guO-aN-amV"/>
                     </view>
                     <navigationItem key="navigationItem" id="SXP-CN-kXd"/>
+                    <connections>
+                        <outlet property="tableView" destination="5iK-do-AqZ" id="zi8-Ll-T2P"/>
+                        <segue destination="FJG-p0-2Yq" kind="presentation" modalPresentationStyle="fullScreen" id="MgM-dN-5p2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nn6-p5-Mm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
