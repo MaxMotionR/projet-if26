@@ -21,6 +21,8 @@ class LoginController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         if((usernameField.text?.isEmpty ?? false) || (passwordField.text?.isEmpty ?? false)){
+            print("coucou")
+        }else{
             if(self.checkCredential(username: usernameField.text!, password: passwordField.text!)){
                 performSegue(withIdentifier: "segueToLogementList", sender: nil)
             }else{
