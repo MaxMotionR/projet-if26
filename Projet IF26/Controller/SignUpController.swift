@@ -38,6 +38,6 @@ class SignUpController: UIViewController {
         
         try? AppDelegate.viewContext.save()
         
-        self.dismiss(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }
