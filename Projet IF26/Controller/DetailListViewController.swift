@@ -19,17 +19,18 @@ class DetailListViewController: UIViewController {
 
     var details = Detail.all
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "segueToDetailAdd" {
+            let detailAddVC = segue.destination as! AddDetailController
+            detailAddVC.piece = self.piece
+        }
     }
-    */
-
+    
+    @IBAction func showAddDetail(_ sender: Any) {
+        performSegue(withIdentifier: "segueToDetailAdd", sender: nil)
+    }
+    
 }
 
 extension DetailListViewController: UITableViewDataSource {

@@ -16,6 +16,8 @@ class AddDetailController: UIViewController, UIPickerViewDataSource, UIPickerVie
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    var piece : Piece!
 
     @IBOutlet weak var objetField: UITextField!
     @IBOutlet weak var statePicker: UIPickerView!
@@ -40,12 +42,11 @@ class AddDetailController: UIViewController, UIPickerViewDataSource, UIPickerVie
         detail.in_state = self.state[statePicker.selectedRow(inComponent: 0)]
         detail.comment = comment
         
-        //TODO : Save the piece
-        
+        detail.piece = self.piece
          
         try? AppDelegate.viewContext.save()
         
-        //TODO go back
+        dismiss(animated: true, completion: nil)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

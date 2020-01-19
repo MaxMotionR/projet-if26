@@ -394,7 +394,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <segue destination="Ruu-uP-CrQ" kind="show" id="R7Q-tb-LsO"/>
+                                    <action selector="showAddDetail:" destination="FJG-p0-2Yq" eventType="touchUpInside" id="EIt-Un-IXp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -402,6 +402,9 @@
                         <viewLayoutGuide key="safeArea" id="oSF-G1-F1O"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ol4-M9-k6d"/>
+                    <connections>
+                        <segue destination="Ruu-uP-CrQ" kind="presentation" identifier="segueToDetailAdd" id="5yg-fj-5PA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEn-HP-W0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -590,7 +593,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <segue destination="L0J-d6-UOY" kind="show" id="tBS-37-5iS"/>
+                                    <action selector="showAddPiece:" destination="R4o-B1-HU8" eventType="touchUpInside" id="Rt8-Pd-MZX"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-do-AqZ">
@@ -629,6 +632,7 @@
                     <connections>
                         <outlet property="tableView" destination="5iK-do-AqZ" id="zi8-Ll-T2P"/>
                         <segue destination="FJG-p0-2Yq" kind="presentation" identifier="segueToDetailList" id="MgM-dN-5p2"/>
+                        <segue destination="L0J-d6-UOY" kind="presentation" identifier="segueToPieceAdd" id="kCu-Sr-i7S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nn6-p5-Mm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
