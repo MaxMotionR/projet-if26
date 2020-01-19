@@ -15,6 +15,7 @@ class AddPieceController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    var logement : Logement!
     @IBOutlet weak var pieceField: UITextField!
     
     @IBAction func saveAction(_ sender: UIButton) {
@@ -33,6 +34,7 @@ class AddPieceController: UIViewController {
 
         // Info from text input
         piece.name = name
+        piece.logement = self.logement
         
         try? AppDelegate.viewContext.save()
         

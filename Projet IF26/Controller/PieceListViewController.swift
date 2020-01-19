@@ -25,16 +25,27 @@ class PieceListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        pieces = Piece.all
         tableView.reloadData()
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "segueToDetailList" {
             let detailListVC = segue.destination as! DetailListViewController
             detailListVC.piece = self.piece
         }
+        
+        if segue.identifier == "segueToPieceAdd" {
+            let pieceAddVC = segue.destination as! AddPieceController
+            pieceAddVC.logement = self.logement
+        }
     }
-
+    
+    @IBAction func showAddPiece(_ sender: Any) {
+                performSegue(withIdentifier: "segueToPieceAdd", sender: nil)
+    }
+    
 
 }
 
