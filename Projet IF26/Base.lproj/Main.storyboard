@@ -349,11 +349,11 @@
             <objects>
                 <viewController id="FJG-p0-2Yq" customClass="DetailListViewController" customModule="Projet_IF26" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ABe-Ef-Uug">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-73-cAl">
-                                <rect key="frame" x="0.0" y="119" width="375" height="600"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="600"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -388,7 +388,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UW-8r-nz8">
-                                <rect key="frame" x="162" y="748" width="50" height="30"/>
+                                <rect key="frame" x="162" y="698" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
@@ -563,6 +563,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O4p-5Y-eGf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H80-G5-h91"/>
                     <connections>
                         <outlet property="adressLabel" destination="vjA-Q2-xEH" id="ZQu-tO-Qbk"/>
                         <outlet property="locationStateLabel" destination="dEq-Cx-V6H" id="zmS-Lv-yYi"/>
@@ -582,8 +583,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-pk-AUt">
+                                <rect key="frame" x="162" y="748" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ajouter"/>
+                                <connections>
+                                    <segue destination="L0J-d6-UOY" kind="show" id="tBS-37-5iS"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-do-AqZ">
-                                <rect key="frame" x="0.0" y="119" width="375" height="600"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="600"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -610,14 +619,6 @@
                                     <outlet property="delegate" destination="R4o-B1-HU8" id="ReC-MU-gEj"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-pk-AUt">
-                                <rect key="frame" x="162" y="748" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ajouter"/>
-                                <connections>
-                                    <segue destination="L0J-d6-UOY" kind="show" id="tBS-37-5iS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="guO-aN-amV"/>
@@ -625,7 +626,7 @@
                     <navigationItem key="navigationItem" id="SXP-CN-kXd"/>
                     <connections>
                         <outlet property="tableView" destination="5iK-do-AqZ" id="zi8-Ll-T2P"/>
-                        <segue destination="FJG-p0-2Yq" kind="presentation" modalPresentationStyle="fullScreen" id="MgM-dN-5p2"/>
+                        <segue destination="FJG-p0-2Yq" kind="presentation" identifier="segueToDetailList" id="MgM-dN-5p2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nn6-p5-Mm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
