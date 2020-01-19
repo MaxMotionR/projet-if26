@@ -15,6 +15,8 @@ class AddLogementController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var user : User!
+    
     @IBOutlet weak var fullnameField: UITextField!
     @IBOutlet weak var adressField: UITextField!
     @IBOutlet weak var zipCodeField: UITextField!
@@ -48,11 +50,11 @@ class AddLogementController: UIViewController {
         logement.zip_code = zipCode
         logement.city = city
         
-        //TODO : Save the user
+        logement.user = self.user
         
         
         try? AppDelegate.viewContext.save()
         
-        //TODO go to make etat des lieux
+        dismiss(animated: true, completion: nil)
     }
 }

@@ -16,30 +16,35 @@ class LogementListViewController: UIViewController {
         // Do any additional setup after loading the view.
         //print (self.user)
     }
+    
     var user: User!
     var logement : Logement!
     var logements = Logement.all
+    @IBOutlet weak var tableView: UITableView!
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        logements = Logement.all
+        print("reload")
+        tableView.reloadData()
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToLogementFiche" {
             let logementFicheVC = segue.destination as! LogementFicheViewController
             logementFicheVC.logement = self.logement
         }
+        
+        if segue.identifier == "segueToLogementAdd" {
+            let logementAddVC = segue.destination as! AddLogementController
+            logementAddVC.user = self.user
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func showAddLogement(_ sender: Any) {
+        performSegue(withIdentifier: "segueToLogementAdd", sender: nil)
     }
-    */
-
+    
 }
 
 extension LogementListViewController: UITableViewDataSource,UITableViewDelegate {

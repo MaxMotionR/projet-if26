@@ -127,7 +127,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <segue destination="V0n-Bt-XYJ" kind="show" id="rEN-xW-14y"/>
+                                    <action selector="showAddLogement:" destination="t79-I2-cSP" eventType="touchUpInside" id="wZN-XN-DwV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -136,7 +136,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ujD-HA-vd4"/>
                     <connections>
+                        <outlet property="tableView" destination="FfR-Ou-9Hb" id="uFS-5R-fEa"/>
                         <segue destination="z4l-SC-IwT" kind="presentation" identifier="segueToLogementFiche" id="NNm-S4-AYa"/>
+                        <segue destination="V0n-Bt-XYJ" kind="presentation" identifier="segueToLogementAdd" id="dG5-PM-cSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXG-hJ-hrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
