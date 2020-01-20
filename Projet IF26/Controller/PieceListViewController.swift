@@ -25,7 +25,7 @@ class PieceListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pieces = Piece.all
+        pieces = Piece.getPiecesFromLogement(logement: logement)
         tableView.reloadData()
     }
     
