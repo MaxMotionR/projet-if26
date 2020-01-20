@@ -14,4 +14,11 @@ class Logement: NSManagedObject{
         guard let logements = try? AppDelegate.viewContext.fetch(request) else { return [] }
         return logements
     }
+    
+    static func getLogementFromUser(user :User) -> [Logement]{
+        let request: NSFetchRequest<Logement> = Logement.fetchRequest()
+        request.predicate = NSPredicate(format: "user == %@", user)
+        guard let logements = try? AppDelegate.viewContext.fetch(request) else { return [] }
+        return logements
+    }
 }
