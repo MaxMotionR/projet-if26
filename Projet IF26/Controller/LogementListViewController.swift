@@ -60,7 +60,7 @@ extension LogementListViewController: UITableViewDataSource,UITableViewDelegate 
 
         let logement = logements[indexPath.row]
         cell.textLabel?.text = logement.locataire
-        cell.detailTextLabel?.text = "\(String(describing: logement.adress))"
+        cell.detailTextLabel?.text = "\(logement.adress ?? "adresse")"
 
         return cell
     }

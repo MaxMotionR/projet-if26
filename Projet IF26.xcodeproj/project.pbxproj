@@ -26,6 +26,7 @@
 		A3855A9723D37316006A4F66 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9623D37316006A4F66 /* Detail.swift */; };
 		A3855A9923D37E38006A4F66 /* DetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9823D37E38006A4F66 /* DetailListViewController.swift */; };
 		A3855A9B23D4B915006A4F66 /* LogementFicheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9A23D4B915006A4F66 /* LogementFicheViewController.swift */; };
+		A3855A9E23D5BBCC006A4F66 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3855A9D23D5BBCC006A4F66 /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		A3855A9623D37316006A4F66 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		A3855A9823D37E38006A4F66 /* DetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewController.swift; sourceTree = "<group>"; };
 		A3855A9A23D4B915006A4F66 /* LogementFicheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogementFicheViewController.swift; sourceTree = "<group>"; };
+		A3855A9D23D5BBCC006A4F66 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		A344352923B905520046A445 /* Projet IF26 */ = {
 			isa = PBXGroup;
 			children = (
+				A3855A9C23D5BBBA006A4F66 /* View */,
 				A33BDED023C0C070006870EE /* Controller */,
 				A33BDECD23C09D28006870EE /* Model */,
 				A344352A23B905520046A445 /* AppDelegate.swift */,
@@ -120,6 +123,14 @@
 				A344353B23B905550046A445 /* Info.plist */,
 			);
 			path = "Projet IF26";
+			sourceTree = "<group>";
+		};
+		A3855A9C23D5BBBA006A4F66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3855A9D23D5BBCC006A4F66 /* CircleButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			files = (
 				A344352B23B905520046A445 /* AppDelegate.swift in Sources */,
 				A3855A9923D37E38006A4F66 /* DetailListViewController.swift in Sources */,
+				A3855A9E23D5BBCC006A4F66 /* CircleButton.swift in Sources */,
 				A33BDEDC23C1E012006870EE /* AddDetailController.swift in Sources */,
 				A3855A9323D34574006A4F66 /* LogementListViewController.swift in Sources */,
 				A33BDED223C0C36E006870EE /* SignUpController.swift in Sources */,

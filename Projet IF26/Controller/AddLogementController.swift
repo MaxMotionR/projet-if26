@@ -21,6 +21,12 @@ class AddLogementController: UIViewController {
     @IBOutlet weak var adressField: UITextField!
     @IBOutlet weak var zipCodeField: UITextField!
     @IBOutlet weak var cityField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        fullnameField.resignFirstResponder()
+        adressField.resignFirstResponder()
+        zipCodeField.resignFirstResponder()
+        cityField.resignFirstResponder()
+    }
     
     
     
@@ -55,6 +61,8 @@ class AddLogementController: UIViewController {
         
         try? AppDelegate.viewContext.save()
         
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
+
     }
 }

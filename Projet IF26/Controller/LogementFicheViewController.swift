@@ -20,7 +20,7 @@ class LogementFicheViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         nameLabel.text = logement.locataire
-        adressLabel.text = logement.adress
+        adressLabel.text = "\(logement.adress ?? "adresse") \n \(logement.zip_code ?? "CP") \(logement.city ?? "Ville")"
         locationStateLabel.text = getLocationState()
     }
     
@@ -40,7 +40,8 @@ class LogementFicheViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToPieceList" {
-            let pieceListVC = segue.destination as! PieceListViewController
+            let navVC = segue.destination as! UINavigationController
+            let pieceListVC = navVC.viewControllers.first as! PieceListViewController
             pieceListVC.logement = self.logement
         }
     }

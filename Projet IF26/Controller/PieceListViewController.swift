@@ -31,7 +31,8 @@ class PieceListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "segueToDetailList" {
-            let detailListVC = segue.destination as! DetailListViewController
+            let navVC = segue.destination as! UINavigationController
+            let detailListVC = navVC.viewControllers.first as! DetailListViewController
             detailListVC.piece = self.piece
         }
         
@@ -39,13 +40,22 @@ class PieceListViewController: UIViewController {
             let pieceAddVC = segue.destination as! AddPieceController
             pieceAddVC.logement = self.logement
         }
+        
+        if segue.identifier == "segueToLogementListFromPiece" {
+            let navVC = segue.destination as! UINavigationController
+            let logementListVC = navVC.viewControllers.first as! LogementListViewController
+            logementListVC.user = self.logement.user
+        }
     }
     
     @IBAction func showAddPiece(_ sender: Any) {
-                performSegue(withIdentifier: "segueToPieceAdd", sender: nil)
+        performSegue(withIdentifier: "segueToPieceAdd", sender: nil)
     }
     
-
+    @IBAction func showLogementList(_ sender: Any) {
+        performSegue(withIdentifier: "segueToLogementListFromPiece", sender: nil)
+    }
+    
 }
 
 extension PieceListViewController: UITableViewDataSource, UITableViewDelegate {

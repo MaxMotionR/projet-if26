@@ -17,6 +17,10 @@ class SignUpController: UIViewController {
     
     @IBOutlet weak var loginField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        loginField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
     
     
     @IBAction func singupAction(_ sender: UIButton) {

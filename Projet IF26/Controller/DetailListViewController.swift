@@ -31,10 +31,20 @@ class DetailListViewController: UIViewController {
             let detailAddVC = segue.destination as! AddDetailController
             detailAddVC.piece = self.piece
         }
+        
+        if segue.identifier == "segueToPieceListFromDetail" {
+            let navVC = segue.destination as! UINavigationController
+            
+            let pieceListVC = navVC.viewControllers.first as! PieceListViewController
+            pieceListVC.logement = self.piece.logement
+        }
     }
     
     @IBAction func showAddDetail(_ sender: Any) {
         performSegue(withIdentifier: "segueToDetailAdd", sender: nil)
+    }
+    @IBAction func showPieceList(_ sender: Any) {
+        performSegue(withIdentifier: "segueToPieceListFromDetail", sender: nil)
     }
     
 }
@@ -53,7 +63,7 @@ extension DetailListViewController: UITableViewDataSource {
 
         let detail = details[indexPath.row]
         cell.textLabel?.text = detail.name
-        cell.detailTextLabel?.text = "\(String(describing: detail.in_state))"
+        cell.detailTextLabel?.text = "Etat : \(detail.in_state ?? "Non renseigné")"
 
         return cell
     }

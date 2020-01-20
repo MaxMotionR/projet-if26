@@ -18,10 +18,18 @@ class LoginController: UIViewController {
     }
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
+    
     
     @IBAction func loginAction(_ sender: Any) {
         if((usernameField.text?.isEmpty ?? false) || (passwordField.text?.isEmpty ?? false)){
-            print("coucou")
+            let alert = UIAlertController(title: "Erreur", message: "Veuillez compléter tous les champs", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            
         }else{
             if(self.checkCredential(username: usernameField.text!, password: passwordField.text!)){
                 performSegue(withIdentifier: "segueToLogementList", sender: nil)

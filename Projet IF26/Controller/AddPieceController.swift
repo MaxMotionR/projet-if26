@@ -17,6 +17,9 @@ class AddPieceController: UIViewController {
 
     var logement : Logement!
     @IBOutlet weak var pieceField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        pieceField.resignFirstResponder()
+    }
     
     @IBAction func saveAction(_ sender: UIButton) {
         if(pieceField.text?.isEmpty ?? false){
@@ -38,7 +41,6 @@ class AddPieceController: UIViewController {
         
         try? AppDelegate.viewContext.save()
         
-        self.dismiss(animated: true, completion: nil)
-
+        _ = navigationController?.popViewController(animated: true)
     }
 }

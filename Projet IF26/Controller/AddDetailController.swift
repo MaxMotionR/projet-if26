@@ -22,6 +22,10 @@ class AddDetailController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var objetField: UITextField!
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var commentField: UITextField!
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        objetField.resignFirstResponder()
+        commentField.resignFirstResponder()
+    }
     
     @IBAction func saveAction(_ sender: UIButton) {
         if((objetField.text?.isEmpty ?? false) || (commentField.text?.isEmpty ?? false)){
@@ -46,7 +50,7 @@ class AddDetailController: UIViewController, UIPickerViewDataSource, UIPickerVie
          
         try? AppDelegate.viewContext.save()
         
-        dismiss(animated: true, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
