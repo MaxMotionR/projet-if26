@@ -15,7 +15,6 @@ class PieceListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         tableView.dataSource = self
-
     }
     
     var logement : Logement!

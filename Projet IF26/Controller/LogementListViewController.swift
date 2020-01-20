@@ -25,7 +25,6 @@ class LogementListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         logements = Logement.getLogementFromUser(user: user)
-        print("reload")
         tableView.reloadData()
     }
     

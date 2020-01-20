@@ -37,7 +37,6 @@ class SignUpController: UIViewController {
         user.password = password
         
         try? AppDelegate.viewContext.save()
-        
-        self.dismiss(animated: true, completion: nil)
+        _ = navigationController?.popToRootViewController(animated: true)
     }
 }

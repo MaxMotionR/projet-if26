@@ -15,4 +15,11 @@ class Detail: NSManagedObject{
         guard let details = try? AppDelegate.viewContext.fetch(request) else { return [] }
         return details
     }
+    
+    static func getDetailFromPiece(piece: Piece)->[Detail]{
+        let request: NSFetchRequest<Detail> = Detail.fetchRequest()
+        request.predicate = NSPredicate(format:"piece == %@",piece)
+        guard let details = try? AppDelegate.viewContext.fetch(request) else { return [] }
+        return details
+    }
 }

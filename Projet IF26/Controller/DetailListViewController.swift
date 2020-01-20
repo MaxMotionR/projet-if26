@@ -16,8 +16,14 @@ class DetailListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     var piece : Piece!
-
     var details = Detail.all
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        details = Detail.getDetailFromPiece(piece: piece)
+        tableView.reloadData()
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

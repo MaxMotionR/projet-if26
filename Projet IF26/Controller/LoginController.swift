@@ -48,7 +48,8 @@ class LoginController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToLogementList" {
-            let logementListVC = segue.destination as! LogementListViewController
+            let navVC = segue.destination as! UINavigationController
+            let logementListVC = navVC.viewControllers.first as! LogementListViewController
             logementListVC.user = self.user
         }
     }
